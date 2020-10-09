@@ -1,12 +1,6 @@
-import mibian
 from math import pi
 from math import log, sqrt, exp
 from scipy import stats
-
-from volatilityestimators import getvol
-
-vol = getvol(255)
-print("Rolling volatility is " + str(vol))
 
 def pricing(option, spot, K, sigma, maturity):        
     if option == "call":
@@ -32,22 +26,3 @@ def pricing(option, spot, K, sigma, maturity):
 
     else:
         print("error")
-
-call = pricing("call", 100, 100, getvol(30), 30/365)
-print(call)
-
-put = pricing("put", 100, 100, getvol(30), 30/365)
-print(put)
-
-# c = mibian.BS([100, 100, 0, 30], volatility=21.86)
-#print(c.callPrice)
-#print(c.putPrice)
-#print(c.callDelta)
-#print(c.gamma)
-#print(c.vega)
-#print(c.callTheta)
-
-# c = mibian.BS([1.4565, 1.45, 1, 30], callPrice=0.0359)
-# print(c.impliedVolatility)
-
-# pricing("call", 290, 320, 0.7, 30/365)
