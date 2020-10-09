@@ -1,4 +1,4 @@
-# quantity to swap expressed in x
+# quantity to swap expressed in x terms
 def swap(x,y,quantity):
     k = x * y
     nx = x + quantity
