@@ -1,5 +1,5 @@
 # quantity to swap expressed in x
-def getswap(x,y,quantity):
+def swap(x,y,quantity):
     k = x * y
     nx = x + quantity
     ny = k / nx
