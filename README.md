@@ -1,4 +1,4 @@
-# trading-framework
+# Trading-Framework
 Various trading tools
 
 blackscholespricing.py : option pricer using Black & Scholes model.  
