@@ -1,7 +1,7 @@
 # Trading-Framework
 Various trading tools:
 
--montecarlo.py: allows to simulate asset price using brownian motion and compute european option price using Monte Carlo method.
+-montecarlo.py: allows to simulate an asset price following a brownian motion and calculate the price of a european option using Monte Carlo method.
 
 -blackscholespricing.py : option pricer using Black & Scholes model for options with no dividends.  
   
